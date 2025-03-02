@@ -1,36 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
-*{
-    font-family: "Jersey 10", serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: antiquewhite;
-    box-sizing: border-box;
-   
-}
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
 
+*{
+
+    font-family: "Sanchez", serif;
+    font-size: large;
+    font-style: normal;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #2D3E40;
+}
 .holder
 {
     width: 380px;
     border: 1px solid black;
-    background-color: black;
+    border-radius: 10px;
+    background-color: #2D3E40;
 }
+
+
 #container
 {   
     margin: 10px;
     box-sizing: content-box;
-    border: 1px solid white;
+    background-color: #2D3E40;
     width: 360px;
+}
+#calc
+{
+    border-bottom: 1px solid black;
+}
+#calc, #result
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
+    width: 100%;
+    height: 35px;
 }
 #display
 {
     display: flex;
-    align-items: center;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 90px;
     margin: auto;
     padding: 10px;
-    border-bottom: 1px solid red;
+    border: 1px solid black;
+    background-color: #387373;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -39,6 +60,7 @@
     width: 360px;
     display: flex;
     flex-direction: column;
+    background-color: #2D3E40;
 
 }
 #top
@@ -72,16 +94,17 @@
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none;
-    border: 1px solid orange;
-    border-radius: 90px;
-    box-shadow: 0px 0px 10px 1px gray;
+    border-radius: 10px;
+    box-shadow: 2px 1px 0px 2px #000000;
     width:  70px;
     height: 70px;
     margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: box-shadow  3s, scale 500ms;
+    transition: box-shadow 400ms , scale 500ms;
+    background-color: #97A6A0;
+    
 }
 .button:hover
 {
@@ -91,14 +114,16 @@
 {
     cursor: pointer;
     scale: 0.8;
-    box-shadow: 0px 0px 5px 1px gray;
+    box-shadow: none;
 }
 .equal, .zero
 {
+    background-color: #f5751d;
    flex-grow: 2;
 }
 
 .clear
 {
+    background-color: #f5751d;
     width: 160px;
 }
